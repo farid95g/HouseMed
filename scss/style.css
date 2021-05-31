@@ -1,0 +1,14 @@
+header {
+  border: 3px solid red;
+  height: 100px;
+}
+
+main {
+  border: 3px solid green;
+  height: 300px;
+}
+
+footer {
+  border: 3px solid blue;
+  height: 150px;
+}/*# sourceMappingURL=style.css.map */
