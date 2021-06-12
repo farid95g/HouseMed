@@ -1,6 +1,7 @@
 header {
   height: 100px;
 
+  // company info section styles
   .company__info {
     height: 94px;
 
@@ -43,7 +44,9 @@ header {
       }
     }
   }
+  // company info section styles
 
+  // navbar styles
   .navbar {
     height: 58px;
 
@@ -75,6 +78,27 @@ header {
       &--item {
         height: 100%;
       }
+
+      .item__active {
+        span {
+          color: #f95259;
+          position: relative;
+
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: calc(100% + 14px);
+            height: 5px;
+            background-color: #f95259;
+            left: -7px;
+            bottom: 0;
+          }
+        }
+        
+
+        
+      }
     }
 
     &__right {
@@ -91,4 +115,5 @@ header {
       }
     }
   }
+  // navbar styles
 }

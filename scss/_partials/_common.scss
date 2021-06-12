@@ -1,3 +1,10 @@
+// padding for the main wrappers
 .wrapper-padding {
   padding: 0 7%;
+}
+
+// styles for the selection of the text
+::selection {
+  background: #f95259;
+  color: #fff;
 }

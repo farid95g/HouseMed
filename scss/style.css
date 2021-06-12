@@ -68,6 +68,20 @@ header .navbar li:last-child a {
 header .navbar__left--item {
   height: 100%;
 }
+header .navbar__left .item__active span {
+  color: #f95259;
+  position: relative;
+}
+header .navbar__left .item__active span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: calc(100% + 14px);
+  height: 5px;
+  background-color: #f95259;
+  left: -7px;
+  bottom: 0;
+}
 header .navbar__right--item {
   height: 100%;
 }
@@ -88,4 +102,14 @@ footer {
 
 .wrapper-padding {
   padding: 0 7%;
+}
+
+::-moz-selection {
+  background: #f95259;
+  color: #fff;
+}
+
+::selection {
+  background: #f95259;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
