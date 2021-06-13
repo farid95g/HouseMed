@@ -91,6 +91,7 @@ header .navbar__left--item .dropdown {
   left: -37px;
   background-color: #fff;
   display: none;
+  width: 226px;
 }
 header .navbar__left--item .dropdown__menu {
   padding: 24px 0 !important;
@@ -109,6 +110,26 @@ header .navbar__left--item .dropdown__menu--item a {
 }
 header .navbar__left--item .dropdown__menu--item a.item__active {
   color: #f95259;
+}
+header .navbar__left--item .dropdown__menu--item .submenu {
+  background-color: #fff;
+  left: 100%;
+  top: -24px;
+  padding: 24px 0;
+  width: 226px;
+  display: none;
+}
+header .navbar__left--item .dropdown__menu--item .submenu__icon {
+  font-size: 10px;
+}
+header .navbar__left--item .dropdown__menu--item .submenu__child--item:hover a {
+  color: #f95259;
+}
+header .navbar__left--item .dropdown__menu--item:hover > a {
+  color: #f95259;
+}
+header .navbar__left--item .dropdown__menu--item:hover .submenu {
+  display: block;
 }
 header .navbar__left--item:hover .dropdown {
   display: block;

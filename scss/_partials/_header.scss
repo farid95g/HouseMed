@@ -117,6 +117,7 @@ header {
           left: -37px;
           background-color: #fff;
           display: none;
+          width: 226px;
   
           &__menu {
             padding: 24px 0 !important;
@@ -135,6 +136,38 @@ header {
   
                 &.item__active {
                   color: #f95259;
+                }
+              }
+
+              .submenu {
+                background-color: #fff;
+                left: 100%;
+                top: -24px;
+                padding: 24px 0;
+                width: 226px;
+                display: none;
+
+                &__icon {
+                  font-size: 10px;
+                }
+
+                &__child {
+                  &--item {
+                    &:hover {
+                      a {
+                        color: #f95259;
+                      }
+                    }
+                  }
+                }
+              }
+
+              &:hover {
+                > a {
+                  color: #f95259;
+                }
+                .submenu {
+                  display: block;
                 }
               }
             }
