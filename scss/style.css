@@ -55,15 +55,20 @@ header .navbar a {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 23px;
-  padding: 0 18px;
+  padding: 0 8px;
+  margin: 0 10px;
   height: 100%;
   line-height: 58px;
 }
+header .navbar a:hover {
+  color: #f95259;
+  transition: color 0.3s;
+}
 header .navbar li:first-child a {
-  padding-left: 0;
+  margin-left: 0;
 }
 header .navbar li:last-child a {
-  padding-right: 0;
+  margin-right: 0;
 }
 header .navbar__left--item {
   height: 100%;
@@ -76,10 +81,10 @@ header .navbar__left .item__active span::after {
   content: "";
   display: inline-block;
   position: absolute;
-  width: calc(100% + 14px);
+  width: calc(100% + 16px);
   height: 5px;
   background-color: #f95259;
-  left: -7px;
+  left: -8px;
   bottom: 0;
 }
 header .navbar__right--item {
@@ -90,6 +95,21 @@ header .navbar__right--item a {
 }
 header .navbar__right--item a i {
   font-size: 1.1rem;
+}
+header .navbar__right--item .pro__cart--quantity {
+  right: 4px;
+  top: 15px;
+  padding: 3px 3px 2.5px 3.5px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #f95259;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 10px;
+}
+header .navbar__right--item .pro__cart:hover .pro__cart--quantity {
+  background-color: #000 !important;
+  transition: background-color 0.3s;
 }
 
 main {
