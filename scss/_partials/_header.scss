@@ -1,7 +1,5 @@
 header {
-  height: 100px;
-
-  // company info section styles
+  // COMPANY INFO SECTION STYLES
   .company__info {
     height: 94px;
 
@@ -44,13 +42,13 @@ header {
       }
     }
   }
-  // company info section styles
+  // COMPANY INFO SECTION STYLES
 
-  // navbar styles
+  // NAVBAR STYLES
   .navbar {
     height: 58px;
 
-    a {
+    &__left--item > a, &__right--item > a {
       display: inline-block;
       color: #2f3241;
       font-family: Montserrat,sans-serif;
@@ -83,22 +81,69 @@ header {
     &__left {
       &--item {
         height: 100%;
-      }
 
-      .item__active {
-        span {
-          color: #f95259;
-          position: relative;
+        > .item__active {
+          span {
+            color: #f95259;
+            position: relative;
+  
+            &::after {
+              content: '';
+              display: inline-block;
+              position: absolute;
+              width: calc(100% + 16px);
+              height: 5px;
+              background-color: #f95259;
+              left: -8px;
+              bottom: 0;
+            }
+          }
+        }
 
-          &::after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            width: calc(100% + 16px);
-            height: 5px;
-            background-color: #f95259;
-            left: -8px;
-            bottom: 0;
+        // DROPDOWN STYLES
+        &:first-child {
+          .dropdown {
+            &__menu {
+              &--item {
+                a {
+                  padding: 8px 37px;
+                }
+              }
+            }
+          }
+        }
+
+        .dropdown {
+          left: -37px;
+          background-color: #fff;
+          display: none;
+  
+          &__menu {
+            padding: 24px 0 !important;
+  
+            &--item {
+              white-space: nowrap;
+  
+              a {
+                display: inline-block;
+                width: 100%;
+                padding: 8px 45px;
+                font-size: 15px;
+                line-height: 23px;
+                color: #919191;
+                font-family: Montserrat, sans-serif;
+  
+                &.item__active {
+                  color: #f95259;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .dropdown {
+            display: block;
           }
         }
       }
@@ -139,5 +184,5 @@ header {
       }
     }
   }
-  // navbar styles
+  // NAVBAR STYLES
 }

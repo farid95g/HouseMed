@@ -12,9 +12,6 @@ ul {
   list-style-type: none;
 }
 
-header {
-  height: 100px;
-}
 header .company__info {
   height: 94px;
 }
@@ -46,7 +43,7 @@ header .company__info--contact .list__item--info p {
 header .navbar {
   height: 58px;
 }
-header .navbar a {
+header .navbar__left--item > a, header .navbar__right--item > a {
   display: inline-block;
   color: #2f3241;
   font-family: Montserrat, sans-serif;
@@ -60,7 +57,7 @@ header .navbar a {
   height: 100%;
   line-height: 58px;
 }
-header .navbar a:hover {
+header .navbar__left--item > a:hover, header .navbar__right--item > a:hover {
   color: #f95259;
   transition: color 0.3s;
 }
@@ -73,11 +70,11 @@ header .navbar li:last-child a {
 header .navbar__left--item {
   height: 100%;
 }
-header .navbar__left .item__active span {
+header .navbar__left--item > .item__active span {
   color: #f95259;
   position: relative;
 }
-header .navbar__left .item__active span::after {
+header .navbar__left--item > .item__active span::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -86,6 +83,35 @@ header .navbar__left .item__active span::after {
   background-color: #f95259;
   left: -8px;
   bottom: 0;
+}
+header .navbar__left--item:first-child .dropdown__menu--item a {
+  padding: 8px 37px;
+}
+header .navbar__left--item .dropdown {
+  left: -37px;
+  background-color: #fff;
+  display: none;
+}
+header .navbar__left--item .dropdown__menu {
+  padding: 24px 0 !important;
+}
+header .navbar__left--item .dropdown__menu--item {
+  white-space: nowrap;
+}
+header .navbar__left--item .dropdown__menu--item a {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 45px;
+  font-size: 15px;
+  line-height: 23px;
+  color: #919191;
+  font-family: Montserrat, sans-serif;
+}
+header .navbar__left--item .dropdown__menu--item a.item__active {
+  color: #f95259;
+}
+header .navbar__left--item:hover .dropdown {
+  display: block;
 }
 header .navbar__right--item {
   height: 100%;
