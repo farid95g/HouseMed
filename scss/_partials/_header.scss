@@ -214,6 +214,24 @@ header {
             }
           }
         }
+
+        .dropdown {
+          background-color: #fff;
+          width: 277px;
+          right: 15px;
+          display: none;
+
+          &__menu {
+            width: 231px;
+            margin: 24px 23px !important;
+          }
+        }
+
+        &:hover {
+          .dropdown {
+            display: block;
+          }
+        }
       }
     }
   }

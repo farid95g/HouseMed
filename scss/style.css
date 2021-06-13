@@ -158,6 +158,19 @@ header .navbar__right--item .pro__cart:hover .pro__cart--quantity {
   background-color: #000 !important;
   transition: background-color 0.3s;
 }
+header .navbar__right--item .dropdown {
+  background-color: #fff;
+  width: 277px;
+  right: 15px;
+  display: none;
+}
+header .navbar__right--item .dropdown__menu {
+  width: 231px;
+  margin: 24px 23px !important;
+}
+header .navbar__right--item:hover .dropdown {
+  display: block;
+}
 
 main {
   height: 300px;
