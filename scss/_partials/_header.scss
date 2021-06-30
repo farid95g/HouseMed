@@ -67,16 +67,6 @@ header {
       }
     }
 
-    > div > ul > li {
-      &:first-child a {
-        padding-left: 7px;
-      }
-
-      &:last-child a {
-        padding-right: 7px;
-      }
-    }
-
     &__left {
       &--item {
         height: 100%;
@@ -101,6 +91,10 @@ header {
 
         // DROPDOWN STYLES
         &:first-child {
+          > a {
+            padding-left: 7px;
+          }
+
           .dropdown {
             &__menu {
               &--item {
@@ -185,28 +179,34 @@ header {
           }
         }
 
-        &:last-child .dropdown {
-          left: 0;
+        &:last-child {
+          > a {
+            padding-right: 7px;
+          }
 
-          > ul {
-            padding-top: 51px !important;
+          .dropdown {
+            left: 0;
 
-            > li {
-              width: 25%;
+            > ul {
+              padding-top: 51px !important;
 
-              &:not(:last-child) {
-                border-right: 1px solid #f0eded;
+              > li {
+                width: 25%;
+
+                &:not(:last-child) {
+                  border-right: 1px solid #f0eded;
+                }
               }
             }
-          }
           
-          h6 {
-            padding: 0 38px;
-            color: #2f3241;
-            font-weight: 800;
-            font-size: 14px;
-            line-height: 1.1em;
-            font-family: Montserrat,sans-serif;
+            h6 {
+              padding: 0 38px;
+              color: #2f3241;
+              font-weight: 800;
+              font-size: 14px;
+              line-height: 1.1em;
+              font-family: Montserrat,sans-serif;
+            }
           }
         }
 
