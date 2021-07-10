@@ -111,6 +111,7 @@ header {
           display: none;
           width: 226px;
           left: -20px;
+          z-index: 20;
   
           &__menu {
             padding: 24px 0 !important;
