@@ -68,6 +68,15 @@ header {
     }
 
     &__left {
+      &--active {
+        background-color: #f95259;
+        height: 5px;
+        left: 11.5px;
+        bottom: 0;
+        width: 55px;
+        transition: left .4s;
+      }
+
       &--item {
         height: 100%;
 
@@ -76,16 +85,16 @@ header {
             color: #f95259;
             position: relative;
   
-            &::after {
-              content: '';
-              display: inline-block;
-              position: absolute;
-              width: calc(100% + 14px);
-              height: 5px;
-              background-color: #f95259;
-              left: -7px;
-              bottom: 0;
-            }
+            // &::after {
+            //   content: '';
+            //   display: inline-block;
+            //   position: absolute;
+            //   width: calc(100% + 14px);
+            //   height: 5px;
+            //   background-color: #f95259;
+            //   left: -7px;
+            //   bottom: 0;
+            // }
           }
         }
 

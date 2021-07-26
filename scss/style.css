@@ -65,22 +65,20 @@ header .navbar__left--item > a:hover, header .navbar__right--item > a:hover {
   color: #f95259;
   transition: color 0.3s;
 }
+header .navbar__left--active {
+  background-color: #f95259;
+  height: 5px;
+  left: 11.5px;
+  bottom: 0;
+  width: 55px;
+  transition: left 0.4s;
+}
 header .navbar__left--item {
   height: 100%;
 }
 header .navbar__left--item > .item__active span {
   color: #f95259;
   position: relative;
-}
-header .navbar__left--item > .item__active span::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: calc(100% + 14px);
-  height: 5px;
-  background-color: #f95259;
-  left: -7px;
-  bottom: 0;
 }
 header .navbar__left--item:first-child > a {
   padding-left: 7px;
