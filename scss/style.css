@@ -142,9 +142,13 @@ header .navbar__left--item:last-child > a {
 }
 header .navbar__left--item:last-child .dropdown {
   left: 0;
+  top: 48px;
+  padding: 10px 0;
+  background-color: transparent;
 }
 header .navbar__left--item:last-child .dropdown > ul {
   padding-top: 51px !important;
+  background-color: #fff;
 }
 header .navbar__left--item:last-child .dropdown > ul > li {
   width: 25%;
