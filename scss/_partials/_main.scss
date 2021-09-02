@@ -1,5 +1,4 @@
 main {
-  
   .slider {
 
     &__btn {
@@ -142,6 +141,81 @@ main {
 
         &.show {
           opacity: 1;
+        }
+      }
+    }
+  }
+
+  .offers {
+    display: flex;
+    justify-content: center;
+
+    > div {
+      transform: translateY(-50px);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    &__offer {
+      background-color: #5663c1;
+      color: #fff;
+      width: 364px;
+      height: 322px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2rem;
+
+      &:nth-child(2n) {
+        background-color: #4a56af;
+      }
+
+      &--icon, &--title, &--description, &--readMore {
+        text-align: center;
+        transform: translateY(20px);
+        transition: all .3s;
+        margin-bottom: 1rem;
+      }
+
+      &--icon {
+        margin-bottom: 2rem;
+      }
+
+      &--title {
+        h5 {
+          font-weight: 800;
+          font-size: 1.25rem;
+        }
+      }
+
+      &--readMore {
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+
+        a {
+          color: #fff;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          font-size: 12px;
+          line-height: 2em;
+          font-weight: 700;
+        }
+
+        img {
+          width: .7rem;
+          margin: 2px 0 0 10px;
+        }
+      }
+
+      &:hover {
+        > div {
+          transform: translateY(0);
+
+          &.offers__offer--readMore {
+            opacity: 1;
+          }
         }
       }
     }
