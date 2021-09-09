@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 p, ul {
   margin: 0 !important;
   padding: 0 !important;
@@ -485,6 +486,85 @@ main .offers__offer:hover > div {
 
 main .offers__offer:hover > div.offers__offer--readMore {
   opacity: 1;
+}
+
+main .introductory {
+  margin-top: 75px;
+}
+
+main .introductory > div > div {
+  width: 45%;
+}
+
+main .introductory__video {
+  min-width: 635px;
+  width: 635px;
+  height: 412px;
+  position: relative;
+}
+
+main .introductory__video img {
+  width: 100%;
+}
+
+main .introductory__video button.play {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #f95259;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .introductory__video button.play img {
+  width: 20px;
+  height: 22px;
+}
+
+main .introductory__text h2 {
+  color: #2f3241;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  line-height: 1.25em;
+  font-weight: 800;
+}
+
+main .introductory__text .underline {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #f95259;
+  margin: 25px 0;
+}
+
+main .introductory__text p {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #919191;
+  margin: 15px 0;
+}
+
+main .introductory__text button {
+  text-transform: uppercase;
+  background-color: #f8464f;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 2em;
+  letter-spacing: .05em;
+  font-weight: 700;
+  border-radius: 3em;
+  padding: 10px 41px;
+  cursor: pointer;
+  margin-top: 25px;
 }
 
 footer {
