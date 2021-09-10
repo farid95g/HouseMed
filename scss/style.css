@@ -489,7 +489,7 @@ main .offers__offer:hover > div.offers__offer--readMore {
 }
 
 main .introductory {
-  margin-top: 75px;
+  margin: 75px 0 100px 0;
 }
 
 main .introductory > div > div {
@@ -565,6 +565,36 @@ main .introductory__text button {
   padding: 10px 41px;
   cursor: pointer;
   margin-top: 25px;
+}
+
+main .achievements {
+  background-color: #2f3241;
+  height: 388px;
+  color: #fff;
+}
+
+main .achievements__number {
+  height: 1em;
+  display: inline-block !important;
+  vertical-align: middle;
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: 800;
+  overflow: hidden;
+}
+
+main .achievements .underline {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #f95259;
+  margin: 25px auto;
+}
+
+main .achievements__title {
+  font-family: Montserrat,sans-serif;
+  font-weight: 800;
+  font-size: 20px;
 }
 
 footer {
