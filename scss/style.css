@@ -254,6 +254,24 @@ header .navbar__right--item:hover .dropdown {
   display: block;
 }
 
+footer {
+  height: 150px;
+}
+
+.wrapper-padding {
+  padding: 0 7%;
+}
+
+::-moz-selection {
+  background: #f95259;
+  color: #fff;
+}
+
+::selection {
+  background: #f95259;
+  color: #fff;
+}
+
 main .slider__btn {
   top: 50%;
   z-index: 10;
@@ -595,23 +613,5 @@ main .achievements__title {
   font-family: Montserrat,sans-serif;
   font-weight: 800;
   font-size: 20px;
-}
-
-footer {
-  height: 150px;
-}
-
-.wrapper-padding {
-  padding: 0 7%;
-}
-
-::-moz-selection {
-  background: #f95259;
-  color: #fff;
-}
-
-::selection {
-  background: #f95259;
-  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
