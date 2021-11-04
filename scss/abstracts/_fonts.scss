@@ -1,30 +1,3 @@
-<<<<<<< HEAD:scss/abstracts/_fonts.scss
 // IMPORT FONTS
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-=======
-// IMPORT CUSTOM FONTS
-@import "base/typography";
-
-// IMPORT VARIABLES
-@import "utilities/variables";
-
-// RESET DEFAULT STYLES
-@import "base/reset";
-
-// IMPORT MIXINS
-@import "utilities/mixins";
-
-// LAYOUT STYLES
-@import "layout/header";
-@import "layout/footer";
-
-// COMMON STYLES
-@import "base/common";
-
-// PAGE STYLES
-@import "pages/home";
-
-
-@import "pages/main";
->>>>>>> c428632fc7274cf892163ff58398f52c0159246a:scss/style.scss
