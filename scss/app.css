@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 p, ul {
   margin: 0 !important;
   padding: 0 !important;
@@ -226,6 +227,23 @@ footer {
   height: 150px;
 }
 
+<<<<<<< HEAD:scss/app.css
+=======
+.wrapper-padding {
+  padding: 0 7%;
+}
+
+::-moz-selection {
+  background: #f95259;
+  color: #fff;
+}
+
+::selection {
+  background: #f95259;
+  color: #fff;
+}
+
+>>>>>>> c428632fc7274cf892163ff58398f52c0159246a:scss/style.css
 main .slider__btn {
   top: 50%;
   z-index: 10;
@@ -395,4 +413,192 @@ main .offers__offer:hover > div {
 }
 main .offers__offer:hover > div.offers__offer--readMore {
   opacity: 1;
+<<<<<<< HEAD:scss/app.css
 }/*# sourceMappingURL=app.css.map */
+=======
+}
+
+main .introductory {
+  margin: 75px 0 100px 0;
+}
+
+main .introductory > div > div {
+  width: 45%;
+}
+
+main .introductory__video {
+  min-width: 635px;
+  width: 635px;
+  height: 412px;
+  position: relative;
+}
+
+main .introductory__video img {
+  width: 100%;
+}
+
+main .introductory__video button.play {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #f95259;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .introductory__video button.play img {
+  width: 20px;
+  height: 22px;
+}
+
+main .introductory__text h2 {
+  color: #2f3241;
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  line-height: 1.25em;
+  font-weight: 800;
+}
+
+main .introductory__text .underline {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #f95259;
+  margin: 25px 0;
+}
+
+main .introductory__text p {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #919191;
+  margin: 15px 0;
+}
+
+main .introductory__text button {
+  text-transform: uppercase;
+  background-color: #f8464f;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 2em;
+  letter-spacing: .05em;
+  font-weight: 700;
+  border-radius: 3em;
+  padding: 10px 41px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+main .achievements {
+  background-color: #2f3241;
+  height: 388px;
+  color: #fff;
+}
+
+main .achievements__number {
+  height: 1em;
+  display: inline-block !important;
+  vertical-align: middle;
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: 800;
+  overflow: hidden;
+}
+
+main .achievements .underline {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #f95259;
+  margin: 25px auto;
+}
+
+main .achievements__title {
+  font-family: Montserrat,sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+main .qualities {
+  padding: 125px 0;
+}
+
+main .qualities h1 {
+  color: #2f3241;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+}
+
+main .qualities p.description {
+  font-size: 19px;
+  line-height: 30px;
+  font-family: Nunito, sans-serif;
+  font-weight: 400;
+  color: #919191;
+  width: 50%;
+}
+
+main .qualities .underline {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #f95259;
+  margin: 25px auto;
+}
+
+main .qualities__quality > div:first-child {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+  width: 90%;
+  margin-left: 5%;
+}
+
+main .qualities__quality--item {
+  z-index: 10;
+  text-align: center;
+}
+
+main .qualities__quality--item .img-wrapper {
+  background-color: #f7f7f7;
+  display: inline-block;
+  border-radius: 50% !important;
+}
+
+main .qualities__quality--item img {
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+main .qualities__quality--item h5 {
+  color: #2f3241;
+  font-family: Montserrat,sans-serif;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+main .qualities__quality--item p {
+  font-family: Nunito,sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #919191;
+  width: 70%;
+  margin: 0 15%;
+  display: inline-block;
+}
+
+main .qualities__quality .bg-image {
+  top: 0;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> c428632fc7274cf892163ff58398f52c0159246a:scss/style.css
