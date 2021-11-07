@@ -1,0 +1,20 @@
+// header company info section mixins
+@mixin header-contact-icon {
+  font-size: $main;
+  color: $dark;
+}
+
+@mixin header-contact-info {
+  font-size: $smaller;
+  color: $gray;
+  text-transform: uppercase;
+  font-family: $main-font;
+  letter-spacing: .05em;
+  font-weight: $bold;
+}
+
+@mixin header-contact-subinfo {
+  font-size: $smaller;
+  color: $gray;
+}
+// header company info section mixins

@@ -1,17 +1,32 @@
 // resetting some default and bootstrap styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 p, ul {
-  margin: 0 !important;
+  margin-bottom: 0 !important;
   padding: 0 !important;
 }
 
+// removing underline from anchor tags
 a {
   text-decoration: none !important;
 }
 
+// remove default list markers from list ul element
 ul {
   list-style-type: none;
 }
 
+// removing outline from form elements
 button, button:focus {
   outline: none;
+}
+
+// overriding default styles of text selection
+::selection {
+  background: #f95259;
+  color: #fff;
 }

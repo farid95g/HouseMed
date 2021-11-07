@@ -9,11 +9,11 @@
   <!-- BOOTSTRAP 4 CSS CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-  <!-- CSS LINK -->
-  <link rel="stylesheet" href="scss/app.css">
-
   <!-- ICONS FROM MATHERIAL DESIGN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="scss/app.css">
 
   <!-- TITLE BAR -->
   <title>HouseMed – HouseMed – A Modern Multipurpose Medical and Health Theme</title>
@@ -23,862 +23,93 @@
 </head>
 
 <body class="homepage__medical--center">
-  <!-- HEADER STARTS -->
-  <header>
-    <!-- INFO SECTION STARTS -->
-    <section class="company__info d-flex justify-content-between align-items-center wrapper-padding border-bottom">
-      <div class="company__info--logo">
-        <a href="index.html" class="d-inline-block">
-          <img src="assets/images/logo.png" alt="company logo" />
-        </a>
+  <!-- header -->
+  <header class="header">
+    <!-- company logo and contact section -->
+    <div class="header__company--info wrapper-padding">
+      <div class="d-flex justify-content-between align-items-center h-100">
+        <!-- header logo -->
+        <div class="header__company--logo d-flex align-items-center">
+          <a href="index.html" class="d-inline-block">
+            <img src="assets/images/logo.png" alt="housemed logo" />
+          </a>
+        </div>
+        <!-- header logo -->
+
+        <!-- company info and contact section -->
+        <div class="header__company--contact">
+          <ul class="d-flex list">
+            <!-- list item -->
+            <li class="list__item d-flex">
+              <div class="list__item--icon pr-2">
+                <a href="working-hours.html" target="_blank"><i class="far fa-clock"></i></a>
+              </div>
+              <div class="list__item--info">
+                <a href="working-hours.html" target="_blank">MON - FRI: 08:00AM - 20:00PM</a>
+                <p>Saturday and Sunday - CLOSED</p>
+              </div>
+            </li>
+            <!-- list item -->
+  
+            <!-- list item -->
+            <li class="list__item d-flex">
+              <div class="list__item--icon pr-2">
+                <a href="contact-us.html" target="_blank"><i class="fas fa-mobile-alt"></i></a>
+              </div>
+              <div class="list__item--info">
+                <a href="contact-us.html" target="_blank">+0800 2466 7921</a>
+                <p>Contact Us For Help</p>
+              </div>
+            </li>
+            <!-- list item -->
+  
+            <!-- list item -->
+            <li class="list__item d-flex">
+              <div class="list__item--icon pr-2">
+                <a href="https://www.google.rs/maps/place/W+34th+St,+New+York,+NY,+USA/@40.7530281,-73.9976213,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259b20a025cb1:0xb3ab847890dfe37f!8m2!3d40.7530281!4d-73.9954326"
+                  target="_blank">
+                  <i class="fas fa-map-marker-alt"></i>
+                </a>
+              </div>
+              <div class="list__item--info">
+                <a href="https://www.google.rs/maps/place/W+34th+St,+New+York,+NY,+USA/@40.7530281,-73.9976213,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259b20a025cb1:0xb3ab847890dfe37f!8m2!3d40.7530281!4d-73.9954326"
+                  target="_blank">34TH AVENUE</a>
+                <p>New York, W2 3XE</p>
+              </div>
+            </li>
+            <!-- list item -->
+          </ul>
+        </div>
+        <!-- company info and contact section -->
       </div>
+    </div>
+    <!-- company logo and contact section -->
 
-      <div class="company__info--contact">
-        <ul class="d-flex">
-          <!-- LIST ITEM -->
-          <li class="list__item d-flex">
-            <div class="list__item--icon pr-2">
-              <a href="working-hours.html" target="_blank"><i class="far fa-clock"></i></a>
-            </div>
-            <div class="list__item--info">
-              <a href="working-hours.html" target="_blank">MON - FRI: 08:00AM - 20:00PM</a>
-              <p>Saturday and Sunday - CLOSED</p>
-            </div>
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="list__item d-flex">
-            <div class="list__item--icon pr-2">
-              <a href="contact-us.html" target="_blank"><i class="fas fa-mobile-alt"></i></a>
-            </div>
-            <div class="list__item--info">
-              <a href="contact-us.html" target="_blank">+0800 2466 7921</a>
-              <p>Contact Us For Help</p>
-            </div>
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="list__item d-flex">
-            <div class="list__item--icon pr-2">
-              <a href="https://www.google.rs/maps/place/W+34th+St,+New+York,+NY,+USA/@40.7530281,-73.9976213,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259b20a025cb1:0xb3ab847890dfe37f!8m2!3d40.7530281!4d-73.9954326"
-                target="_blank">
-                <i class="fas fa-map-marker-alt"></i>
-              </a>
-            </div>
-            <div class="list__item--info">
-              <a href="https://www.google.rs/maps/place/W+34th+St,+New+York,+NY,+USA/@40.7530281,-73.9976213,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259b20a025cb1:0xb3ab847890dfe37f!8m2!3d40.7530281!4d-73.9954326"
-                target="_blank">34TH AVENUE</a>
-              <p>New York, W2 3XE</p>
-            </div>
-          </li>
-          <!-- LIST ITEM -->
-        </ul>
-      </div>
-    </section>
-    <!-- INFO SECTION ENDS -->
-
-    <!-- NAVBAR STARTS -->
-    <nav class="navbar wrapper-padding">
-      <!-- LEFT NAVBAR STARTS -->
-      <div class="navbar__left h-100">
-        <ul class="d-flex h-100">
-          <!-- LIST ITEM -->
-          <li class="navbar__left--active position-absolute"></li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__left--item position-relative">
-            <a href="" class="item__active">
-              <span class="d-inline-block h-100">HOME</span>
-            </a>
-
-            <!-- DROPDOWN MENU -->
-            <div class="position-absolute dropdown shadow-lg">
-              <ul class="dropdown__menu">
-                <li class="dropdown__menu--item">
-                  <a href="" class="item__active">Medical Center</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Nutritionist Home</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Gerontology Center</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Psychologist Home</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Optometry Home</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Pediatrics Home</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Dental Clinic</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Physical Therapy</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Landing</a>
-                </li>
-              </ul>
-            </div>
-            <!-- DROPDOWN MENU -->
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__left--item position-relative">
-            <a href="">
-              <span class="d-inline-block h-100">PAGES</span>
-            </a>
-
-            <!-- DROPDOWN MENU -->
-            <div class="position-absolute dropdown shadow-lg">
-              <ul class="dropdown__menu">
-                <li class="dropdown__menu--item">
-                  <a href="">About Us</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Our Clinic</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Our Services</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Pricing Plans</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Working Hours</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Contact Us</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">FAQ Page</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Coming Soon</a>
-                </li>
-              </ul>
-            </div>
-            <!-- DROPDOWN MENU -->
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__left--item position-relative">
-            <a href="">
-              <span class="d-inline-block h-100">DOCTORS</span>
-            </a>
-
-            <!-- DROPDOWN MENU -->
-            <div class="position-absolute dropdown shadow-lg">
-              <ul class="dropdown__menu">
-                <li class="dropdown__menu--item">
-                  <a href="">Our Doctors</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Doctor Showcase</a>
-                </li>
-              </ul>
-            </div>
-            <!-- DROPDOWN MENU -->
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__left--item position-relative">
-            <a href="">
-              <span class="d-inline-block h-100">TIMETABLE</span>
-            </a>
-
-            <!-- DROPDOWN MENU -->
-            <div class="position-absolute dropdown shadow-lg">
-              <ul class="dropdown__menu">
-                <li class="dropdown__menu--item">
-                  <a href="">Timetable</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Department</a>
-                </li>
-              </ul>
-            </div>
-            <!-- DROPDOWN MENU -->
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__left--item position-relative">
-            <a href="">
-              <span class="d-inline-block h-100">BLOG</span>
-            </a>
-
-            <!-- DROPDOWN MENU -->
-            <div class="position-absolute dropdown shadow-lg">
-              <ul class="dropdown__menu">
-                <li class="dropdown__menu--item">
-                  <a href="">Right Sidebar</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Left Sidebar</a>
-                </li>
-                <li class="dropdown__menu--item">
-                  <a href="">Without Sidebar</a>
-                </li>
-                <li class="dropdown__menu--item position-relative">
-                  <a href="" class="d-flex justify-content-between align-items-center">
-                    Post Types
-                    <i class="fas fa-chevron-right submenu__icon"></i>
-                  </a>
-
-                  <!-- SUBMENU -->
-                  <div class="submenu shadow-lg position-absolute">
-                    <ul class="submenu__child">
-                      <li class="submenu__child--item">
-                        <a href="">Standard</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">Gallery</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">Quote</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">Link</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">Audio</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">Video</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- SUBMENU -->
-                </li>
-              </ul>
-            </div>
-            <!-- DROPDOWN MENU -->
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__left--item position-relative">
-            <a href="">
-              <span class="d-inline-block h-100">SHOP</span>
-            </a>
-
-            <!-- DROPDOWN MENU -->
-            <div class="position-absolute dropdown shadow-lg">
-              <ul class="dropdown__menu">
-                <!-- LIST ITEM -->
-                <li class="dropdown__menu--item">
-                  <a href="">Product List</a>
-                </li>
-                <!-- LIST ITEM -->
-
-                <!-- LIST ITEM -->
-                <li class="dropdown__menu--item">
-                  <a href="">Single Product</a>
-                </li>
-                <!-- LIST ITEM -->
-
-                <!-- LIST ITEM -->
-                <li class="dropdown__menu--item position-relative">
-                  <a href="" class="d-flex justify-content-between align-items-center">
-                    Shop Pages
-                    <i class="fas fa-chevron-right submenu__icon"></i>
-                  </a>
-
-                  <!-- SUBMENU -->
-                  <div class="submenu shadow-lg position-absolute">
-                    <ul class="submenu__child">
-                      <li class="submenu__child--item">
-                        <a href="">Cart</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">My account</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">Checkout</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- SUBMENU -->
-                </li>
-                <!-- LIST ITEM -->
-
-                <!-- LIST ITEM -->
-                <li class="dropdown__menu--item position-relative">
-                  <a href="" class="d-flex justify-content-between align-items-center">
-                    Shop Layouts
-                    <i class="fas fa-chevron-right submenu__icon"></i>
-                  </a>
-
-                  <!-- SUBMENU -->
-                  <div class="submenu shadow-lg position-absolute">
-                    <ul class="submenu__child">
-                      <li class="submenu__child--item">
-                        <a href="">Three Columns</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">Four Columns</a>
-                      </li>
-                      <li class="submenu__child--item">
-                        <a href="">Five Columns Wide</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- SUBMENU -->
-                </li>
-                <!-- LIST ITEM -->
-              </ul>
-            </div>
-            <!-- DROPDOWN MENU -->
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__left--item">
-            <a href="">
-              <span class="d-inline-block h-100 active">ELEMENTS</span>
-            </a>
-
-            <!-- DROPDOWN MENU -->
-            <div class="position-absolute dropdown wrapper-padding w-100">
-              <ul class="dropdown__menu d-flex justify-content-between">
-                <!-- LIST ITEM -->
-                <li class="dropdown__menu--item">
-                  <h6>Classic</h6>
-                  <ul>
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Accordions</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Buttons</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Icon With Text</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Google Maps</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Contact Form</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Blog List</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Clients</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Tabs</a>
-                    </li>
-                    <!-- LIST ITEM -->
-                  </ul>
-                </li>
-                <!-- LIST ITEM -->
-
-                <!-- LIST ITEM -->
-                <li class="dropdown__menu--item">
-                  <h6>Presentation</h6>
-                  <ul>
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Doctors List</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Horizontal Timeline</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Working Hours</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Parallax Section</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Testimonials</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Image Gallery</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Pricing Tables</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Process</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Cards</a>
-                    </li>
-                    <!-- LIST ITEM -->
-                  </ul>
-                </li>
-                <!-- LIST ITEM -->
-
-                <!-- LIST ITEM -->
-                <li class="dropdown__menu--item">
-                  <h6>Interactive</h6>
-                  <ul>
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Timetable</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Booking Form</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Call to Action</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Progress Bar</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Video Button</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Counters</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Countdown</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Pie Chart</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Boxes</a>
-                    </li>
-                    <!-- LIST ITEM -->
-                  </ul>
-                </li>
-                <!-- LIST ITEM -->
-
-                <!-- LIST ITEM -->
-                <li class="dropdown__menu--item">
-                  <h6>Typography</h6>
-                  <ul>
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Headings</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Columns</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Section Title</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Dropcaps & Highlights</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Blockquote</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Info List</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Separators</a>
-                    </li>
-                    <!-- LIST ITEM -->
-
-                    <!-- LIST ITEM -->
-                    <li>
-                      <a href="">Custom Font</a>
-                    </li>
-                    <!-- LIST ITEM -->
-                  </ul>
-                </li>
-                <!-- LIST ITEM -->
-              </ul>
-            </div>
-            <!-- DROPDOWN MENU -->
-          </li>
-          <!-- LIST ITEM -->
-        </ul>
-      </div>
-      <!-- LEFT NAVBAR ENDS -->
-
-      <!-- RIGHT NAVBAR STARTS -->
-      <div class="navbar__right h-100">
-        <ul class="d-flex h-100">
-          <!-- LIST ITEM -->
-          <li class="navbar__right--item">
-            <a href=""><i class="fas fa-search"></i></a>
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__right--item position-relative">
-            <a href="" class="pro__cart position-relative">
-              <i class="fas fa-shopping-bag"></i>
-              <span class="pro__cart--quantity position-absolute">0</span>
-            </a>
-
-            <!-- DROPDOWN MENU -->
-            <div class="position-absolute dropdown shadow-lg">
-              <ul class="dropdown__menu">
-                <li>No products in the cart.</li>
-              </ul>
-            </div>
-            <!-- DROPDOWN MENU -->
-          </li>
-          <!-- LIST ITEM -->
-
-          <!-- LIST ITEM -->
-          <li class="navbar__right--item">
-            <a href=""><i class="fas fa-bars"></i></a>
-          </li>
-          <!-- LIST ITEM -->
-        </ul>
-      </div>
-      <!-- RIGHT NAVBAR ENDS -->
-    </nav>
-    <!-- NAVBAR ENDS -->
+    <!-- NAVBAR -->
+    <!-- NAVBAR -->
   </header>
-  <!-- HEADER ENDS -->
+  <!-- HEADER -->
 
   <!-- MAIN SECTION STARTS -->
   <main>
     <!-- SLIDER STARTS -->
-    <section class="slider">
-      <!-- LEFT AND RIGHT ARROW ICONS -->
-      <div class="slider__btn slider__btn--left position-absolute">
-        <button>
-          <img src="assets/icons/left-chevron.svg" alt="left chevron icon" />
-        </button>
-      </div>
-
-      <div class="slider__btn slider__btn--right position-absolute">
-        <button>
-          <img src="assets/icons/right-chevron.svg" alt="right chevron icon" />
-        </button>
-      </div>
-      <!-- LEFT AND RIGHT ARROW ICONS -->
-
-      <div class="slider__items position-relative">
-        <!-- SLIDER ITEM -->
-        <div class="slider__items--item position-absolute">
-          <!-- SLIDER DESCRIPTION -->
-          <div class="slider__items--itemDescription">
-            <h1 class="hidden">Start Up Your Health Care</h1>
-            <span class="position-relative hidden"></span>
-            <p class="hidden">Every day is a new opportunity for you to do something for your health.</p>
-            <button class="hidden">PURCHASE</button>
-          </div>
-          <!-- SLIDER DESCRIPTION -->
-
-          <!-- SLIDER IMAGE -->
-          <div class="slider__items--itemImage">
-            <img src="assets/images/slider-images/slider-img-1.jpg" alt="slider img" />
-          </div>
-          <!-- SLIDER IMAGE -->
-        </div>
-        <!-- SLIDER ITEM -->
-
-        <!-- SLIDER ITEM -->
-        <div class="slider__items--item position-absolute">
-          <!-- SLIDER DESCRIPTION -->
-          <div class="slider__items--itemDescription">
-            <h1 class="hidden">Meet The Best Experts</h1>
-            <span class="position-relative hidden"></span>
-            <p class="hidden">Every day is a new opportunity for you to do something for your health.</p>
-            <button class="hidden">PURCHASE</button>
-          </div>
-          <!-- SLIDER DESCRIPTION -->
-
-          <!-- SLIDER IMAGE -->
-          <div class="slider__items--itemImage">
-            <img src="assets/images/slider-images/slider-img-2.jpg" alt="slider img" />
-          </div>
-          <!-- SLIDER IMAGE -->
-        </div>
-        <!-- SLIDER ITEM -->
-
-        <!-- SLIDER ITEM -->
-        <div class="slider__items--item position-absolute">
-          <!-- SLIDER DESCRIPTION -->
-          <div class="slider__items--itemDescription">
-            <h1 class="hidden">Take Care Of Your Health</h1>
-            <span class="position-relative hidden"></span>
-            <p class="hidden">Every day is a new opportunity for you to do something for your health.</p>
-            <button class="hidden">PURCHASE</button>
-          </div>
-          <!-- SLIDER DESCRIPTION -->
-
-          <!-- SLIDER IMAGE -->
-          <div class="slider__items--itemImage">
-            <img src="assets/images/slider-images/slider-img-3.jpg" alt="slider img" />
-          </div>
-          <!-- SLIDER IMAGE -->
-        </div>
-        <!-- SLIDER ITEM -->
-      </div>
-    </section>
+    
     <!-- SLIDER ENDS -->
 
     <!-- COMPANY OFFERS STARTS -->
-    <section class="offers wrapper-padding">
-      <div class="d-flex">
-        <!-- OFFER -->
-        <div class="offers__offer">
-          <div class="offers__offer--icon">
-            <img src="assets/icons/h1-icon-1.png" alt="offer icon for health information" />
-          </div>
-          <div class="offers__offer--title">
-            <h5>Health Information</h5>
-          </div>
-          <div class="offers__offer--description">
-            <p>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation</p>
-          </div>
-          <div class="offers__offer--readMore">
-            <a href="#">
-              <span>READ MORE</span>
-              <img src="assets/icons/right-arrow.svg" alt="right arrow icon" />
-            </a>
-          </div>
-        </div>
-        <!-- OFFER -->
-
-        <!-- OFFER -->
-        <div class="offers__offer">
-          <div class="offers__offer--icon">
-            <img src="assets/icons/h1-icon-2.png" alt="offer icon for health information" />
-          </div>
-          <div class="offers__offer--title">
-            <h5>Doctor Timetable</h5>
-          </div>
-          <div class="offers__offer--description">
-            <p>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation</p>
-          </div>
-          <div class="offers__offer--readMore">
-            <a href="#">
-              <span>READ MORE</span>
-              <img src="assets/icons/right-arrow.svg" alt="right arrow icon" />
-            </a>
-          </div>
-        </div>
-        <!-- OFFER -->
-
-        <!-- OFFER -->
-        <div class="offers__offer">
-          <div class="offers__offer--icon">
-            <img src="assets/icons/h1-icon-3.png" alt="offer icon for health information" />
-          </div>
-          <div class="offers__offer--title">
-            <h5>Medical Education</h5>
-          </div>
-          <div class="offers__offer--description">
-            <p>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation</p>
-          </div>
-          <div class="offers__offer--readMore">
-            <a href="#">
-              <span>READ MORE</span>
-              <img src="assets/icons/right-arrow.svg" alt="right arrow icon" />
-            </a>
-          </div>
-        </div>
-        <!-- OFFER -->
-      </div>
-    </section>
+    
     <!-- COMPANY OFFERS ENDS -->
 
     <!-- VIDEO SECTION STARTS -->
-    <section class="introductory wrapper-padding">
-      <div class="d-flex justify-content-between">
-        <div class="introductory__video">
-          <img src="assets/images/h1-video-img.jpg" alt="doctors sitting" />
-          <button class="play">
-            <img src="assets/icons/play-button.svg" alt="play button" />
-          </button>
-        </div>
-        <div class="introductory__text d-flex align-items-center">
-          <div>
-            <h2>Good Health<br />Moves Us Forward</h2>
-            <span class="underline"></span>
-            <p>Ut wisi enim ad minim veniam, quis laore nostrud exerci tation ulm hedi corper turet suscipit lobortis nisl ut aliquip erat volutpat autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at.</p>
-            <button>READ MORE</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <!-- VIDEO SECTION ENDS -->
 
     <!-- ACHIEVEMENTS SECTION STARTS -->
-    <section class="achievements wrapper-padding">
-      <div class="row h-100">
-        <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-          <p class="achievements__number">22</p>
-          <span class="underline"></span>
-          <h5 class="achievements__title">Medical Experts</h5>
-        </div>
-        <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-          <p class="achievements__number">146</p>
-          <span class="underline"></span>
-          <h5 class="achievements__title">Modern Rooms</h5>
-        </div>
-        <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-          <p class="achievements__number">388</p>
-          <span class="underline"></span>
-          <h5 class="achievements__title">Health Treatments</h5>
-        </div>
-        <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-          <p class="achievements__number">1280</p>
-          <span class="underline"></span>
-          <h5 class="achievements__title">Surgeries a Year</h5>
-        </div>
-      </div>
-    </section>
+    
     <!-- ACHIEVEMENTS SECTION ENDS -->
 
     <!-- QUALITIES SECTION STARTS -->
-    <section class="qualities">
-      <div class="d-flex flex-column align-items-center mb-5">
-        <h1>Where people come first</h1>
-        <span class="underline"></span>
-        <p class="text-center description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhie euismod tincidunt ut laoreet dolore magna erat</p>
-      </div>
-
-      <div class="qualities__quality position-relative">
-        <div class="d-flex">
-          <div class="qualities__quality--item">
-            <div class="img-wrapper">
-              <img src="assets/images/h1-img-1.png" alt="">
-            </div>
-            <div>
-              <h5>Comfortable Care</h5>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipis elit</p>
-            </div>
-          </div>
-  
-          <div class="qualities__quality--item">
-            <div class="img-wrapper">
-              <img src="assets/images/h1-img-2.png" alt="">
-            </div>
-            <div>
-              <h5>Trusted Doctors</h5>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipis elit</p>
-            </div>
-          </div>
-  
-          <div class="qualities__quality--item">
-            <div class="img-wrapper">
-              <img src="assets/images/h1-img-3.png" alt="">
-            </div>
-            <div>
-              <h5>Highest Quality</h5>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipis elit</p>
-            </div>
-          </div>
-  
-          <div class="qualities__quality--item">
-            <div class="img-wrapper">
-              <img src="assets/images/h1-img-4.png" alt="">
-            </div>
-            <div>
-              <h5>Always Smiling</h5>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipis elit</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-image position-absolute">
-          <img src="assets/images/process-bg.png" alt="qualities section background" />
-        </div>
-      </div>
-    </section>
+    
     <!-- QUALITIES SECTION ENDS -->
   </main>
   <!-- MAIN SECTION ENDS -->
