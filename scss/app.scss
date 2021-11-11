@@ -1,14 +1,14 @@
 // IMPORT BASE
-@use "base/all";
+@import "base/all";
 
 // IMPORT ABSTRACTS
-@use "abstracts/all";
+@import "abstracts/all";
 
 // IMPORT COMPONENTS
-@use "components/all";
+@import "components/all";
 
 // IMPORT LAYOUT
-@use "layout/all";
+@import "layout/all";
 
 // IMPORT PAGES
-@use "pages/all";
+@import "pages/all";
