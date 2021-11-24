@@ -112,246 +112,261 @@
     }
     // header contact section
   }
+  
+  // header navbar styles
+  &__navbar {
+    border: 2px solid red;
+    height: 58px;
+    display: flex;
+
+    // left side navbar styles
+    &--left {
+      border: 2px solid blue;
+    }
+
+    // right side navbar styles
+    &--right {
+      border: 2px solid green;
+    }
+  }
 }
 // header styles
 
 
-header {
-  // NAVBAR STYLES
-  .navbar {
-    height: 58px;
+// header {
+//   // navbar styles
+//   .navbar {
+//     &__left--item > a, &__right--item > a {
+//       display: inline-block;
+//       color: #2f3241;
+//       font-family: Montserrat,sans-serif;
+//       font-weight: 800;
+//       letter-spacing: .05em;
+//       font-size: 12px;
+//       text-transform: uppercase;
+//       line-height: 23px;
+//       padding: 0 18px;
+//       height: 100%;
+//       line-height: 58px;
 
-    &__left--item > a, &__right--item > a {
-      display: inline-block;
-      color: #2f3241;
-      font-family: Montserrat,sans-serif;
-      font-weight: 800;
-      letter-spacing: .05em;
-      font-size: 12px;
-      text-transform: uppercase;
-      line-height: 23px;
-      padding: 0 18px;
-      height: 100%;
-      line-height: 58px;
+//       &:hover {
+//         color: #f95259;
+//         transition: color .3s;
+//       }
+//     }
 
-      &:hover {
-        color: #f95259;
-        transition: color .3s;
-      }
-    }
+//     &__left {
+//       &--active {
+//         background-color: #f95259;
+//         height: 5px;
+//         left: calc(7% + 11.5px);
+//         bottom: 0;
+//         width: 55px;
+//         transition: left .4s;
+//       }
 
-    &__left {
-      &--active {
-        background-color: #f95259;
-        height: 5px;
-        left: calc(7% + 11.5px);
-        bottom: 0;
-        width: 55px;
-        transition: left .4s;
-      }
+//       &--item {
+//         height: 100%;
 
-      &--item {
-        height: 100%;
+//         > .item__active {
+//           span {
+//             color: #f95259;
+//             position: relative;
+//           }
+//         }
 
-        > .item__active {
-          span {
-            color: #f95259;
-            position: relative;
-          }
-        }
+//         // dropdown styles
+//         &:first-child {
+//           > a {
+//             padding-left: 7px;
+//           }
 
-        // DROPDOWN STYLES
-        &:first-child {
-          > a {
-            padding-left: 7px;
-          }
+//           .dropdown {
+//             &__menu {
+//               &--item {
+//                 a {
+//                   padding: 8px 37px;
+//                 }
+//               }
+//             }
+//           }
+//         }
 
-          .dropdown {
-            &__menu {
-              &--item {
-                a {
-                  padding: 8px 37px;
-                }
-              }
-            }
-          }
-        }
-
-        .dropdown {
-          background-color: #fff;
-          display: none;
-          width: 226px;
-          left: -20px;
-          z-index: 20;
+//         .dropdown {
+//           background-color: #fff;
+//           display: none;
+//           width: 226px;
+//           left: -20px;
+//           z-index: 20;
   
-          &__menu {
-            padding: 24px 0 !important;
+//           &__menu {
+//             padding: 24px 0 !important;
   
-            &--item {
-              white-space: nowrap;
+//             &--item {
+//               white-space: nowrap;
   
-              a {
-                display: inline-block;
-                width: 100%;
-                padding: 8px 38px;
-                font-size: 15px;
-                line-height: 23px;
-                color: #919191;
-                font-family: Montserrat, sans-serif;
+//               a {
+//                 display: inline-block;
+//                 width: 100%;
+//                 padding: 8px 38px;
+//                 font-size: 15px;
+//                 line-height: 23px;
+//                 color: #919191;
+//                 font-family: Montserrat, sans-serif;
   
-                &.item__active {
-                  color: #f95259;
-                }
-              }
+//                 &.item__active {
+//                   color: #f95259;
+//                 }
+//               }
 
-              .submenu {
-                background-color: #fff;
-                left: 100%;
-                top: -24px;
-                padding: 24px 0;
-                width: 226px;
-                display: none;
+//               .submenu {
+//                 background-color: #fff;
+//                 left: 100%;
+//                 top: -24px;
+//                 padding: 24px 0;
+//                 width: 226px;
+//                 display: none;
 
-                &__icon {
-                  font-size: 10px;
-                }
+//                 &__icon {
+//                   font-size: 10px;
+//                 }
 
-                &__child {
-                  &--item {
-                    &:hover {
-                      a {
-                        color: #f95259;
-                      }
-                    }
-                  }
-                }
-              }
+//                 &__child {
+//                   &--item {
+//                     &:hover {
+//                       a {
+//                         color: #f95259;
+//                       }
+//                     }
+//                   }
+//                 }
+//               }
 
-              &:hover {
-                > a {
-                  color: #f95259;
-                }
-                .submenu {
-                  display: block;
-                }
-              }
-            }
-          }
-        }
+//               &:hover {
+//                 > a {
+//                   color: #f95259;
+//                 }
+//                 .submenu {
+//                   display: block;
+//                 }
+//               }
+//             }
+//           }
+//         }
 
-        &:first-child .dropdown {
-          left: -30px;
+//         &:first-child .dropdown {
+//           left: -30px;
 
-          ul {
-            li {
-              a {
-                padding-left: 37px;
-              }
-            }
-          }
-        }
+//           ul {
+//             li {
+//               a {
+//                 padding-left: 37px;
+//               }
+//             }
+//           }
+//         }
 
-        &:last-child {
-          > a {
-            padding-right: 7px;
-          }
+//         &:last-child {
+//           > a {
+//             padding-right: 7px;
+//           }
 
-          .dropdown {
-            left: 0;
-            top: 48px;
-            padding: 10px 0;
-            background-color: transparent;
+//           .dropdown {
+//             left: 0;
+//             top: 48px;
+//             padding: 10px 0;
+//             background-color: transparent;
 
-            > ul {
-              padding-top: 51px !important;
-              background-color: #fff;
+//             > ul {
+//               padding-top: 51px !important;
+//               background-color: #fff;
 
-              > li {
-                width: 25%;
+//               > li {
+//                 width: 25%;
 
-                &:not(:last-child) {
-                  border-right: 1px solid #f0eded;
-                }
-              }
-            }
+//                 &:not(:last-child) {
+//                   border-right: 1px solid #f0eded;
+//                 }
+//               }
+//             }
           
-            h6 {
-              padding: 0 38px;
-              color: #2f3241;
-              font-weight: 800;
-              font-size: 14px;
-              line-height: 1.1em;
-              font-family: Montserrat,sans-serif;
-            }
-          }
-        }
+//             h6 {
+//               padding: 0 38px;
+//               color: #2f3241;
+//               font-weight: 800;
+//               font-size: 14px;
+//               line-height: 1.1em;
+//               font-family: Montserrat,sans-serif;
+//             }
+//           }
+//         }
 
-        &:hover {
-          .dropdown {
-            display: block;
-          }
-        }
-      }
-    }
+//         &:hover {
+//           .dropdown {
+//             display: block;
+//           }
+//         }
+//       }
+//     }
 
-    &__right {
-      &--item {
-        height: 100%;
+//     &__right {
+//       &--item {
+//         height: 100%;
 
-        a {
-          padding: 0 10px;
+//         a {
+//           padding: 0 10px;
 
-          i {
-            font-size: 1.1rem;
-          }
-        }
+//           i {
+//             font-size: 1.1rem;
+//           }
+//         }
 
-        &:last-child {
-          a {
-            padding-right: 0;
-          }
-        }
+//         &:last-child {
+//           a {
+//             padding-right: 0;
+//           }
+//         }
 
-        .pro__cart {
-          &--quantity {
-            right: 4px;
-            top: 15px;
-            padding: 3px 3px 2.5px 3.5px;
-            border-radius: 50%;
-            color: #fff;
-            background-color: #f95259;
-            line-height: 1;
-            font-weight: 700;
-            font-size: 10px;
-          }
+//         .pro__cart {
+//           &--quantity {
+//             right: 4px;
+//             top: 15px;
+//             padding: 3px 3px 2.5px 3.5px;
+//             border-radius: 50%;
+//             color: #fff;
+//             background-color: #f95259;
+//             line-height: 1;
+//             font-weight: 700;
+//             font-size: 10px;
+//           }
 
-          &:hover {
-            .pro__cart--quantity {
-              background-color: #000 !important;
-              transition: background-color .3s;
-            }
-          }
-        }
+//           &:hover {
+//             .pro__cart--quantity {
+//               background-color: #000 !important;
+//               transition: background-color .3s;
+//             }
+//           }
+//         }
 
-        .dropdown {
-          background-color: #fff;
-          width: 277px;
-          right: 15px;
-          display: none;
+//         .dropdown {
+//           background-color: #fff;
+//           width: 277px;
+//           right: 15px;
+//           display: none;
 
-          &__menu {
-            width: 231px;
-            margin: 24px 23px !important;
-          }
-        }
+//           &__menu {
+//             width: 231px;
+//             margin: 24px 23px !important;
+//           }
+//         }
 
-        &:hover {
-          .dropdown {
-            display: block;
-          }
-        }
-      }
-    }
-  }
-  // NAVBAR STYLES
-}
+//         &:hover {
+//           .dropdown {
+//             display: block;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   // navbar styles
+// }

@@ -1,8 +1,8 @@
-// SLIDER VARIABLES
+// slider variables
 const sliderItems = document.querySelectorAll('.slider__items--item');
 const sliderButtons = document.querySelectorAll('.slider__btn button');
 
-// LOAD ANIMATION FOR SLIDER ITEM
+// load animation for slider item
 document.addEventListener('DOMContentLoaded', () => {
   sliderItems[0].classList.add('show');
   const sliderChildren = sliderItems[0].children[0];
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   animateSliderItem(null, sliderChildren.children);
 });
 
-// SLIDER ITEM ELEMENTS ANIMATION FUNCTION
+// slider item elements animation function
 function animateSliderItem(prevItems, currItems) {
   if (prevItems) {
     [...prevItems].forEach(item => {
@@ -25,7 +25,7 @@ function animateSliderItem(prevItems, currItems) {
   });
 }
 
-// CHANGE SLIDER ITEM ON BUTTON CLICKS
+// change slider item on button clicks
 sliderButtons.forEach(button => {
   button.addEventListener('click', () => {
     const currentIndex = [...sliderItems].indexOf(document.querySelector('.slider__items--item.show'));
